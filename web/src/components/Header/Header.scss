@@ -1,0 +1,16 @@
+@import '../../styles/global.scss';
+
+.header {
+	background-color: $color-primary;
+	padding: 5px 0px;
+
+	&__container {
+		display: grid;
+		grid-template-columns: 80px 1fr;
+		align-items: center;
+	}
+
+	&__image {
+		margin: 0;
+	}
+}

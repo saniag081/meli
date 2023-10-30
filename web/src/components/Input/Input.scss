@@ -1,0 +1,43 @@
+@import '../../styles/variable';
+
+.input {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 40px;
+
+	button {
+		display: block;
+		right: 0;
+		
+		height: 100%;
+		width: 40px;
+
+		border-radius: 0px 5px 5px 0px;
+		border: none;
+		
+		background-color: $color-secundary;
+		background-image: url(../../assets/icons/search_icon.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	// &__container {
+	// }
+
+	&__element {
+		width: 100%;
+
+		padding: 10px 15px;
+
+		border: 1.5px;
+		border-radius: 5px;
+		border-color: transparent;
+
+		&:focus {
+			outline: none;
+
+			border-style: solid;
+			border-color: $color-secundary;
+			border-width: 1.5px;
+		}
+	}
+}
